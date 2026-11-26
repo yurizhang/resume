@@ -4,6 +4,8 @@ Staff Engineer at Trend Micro. I build the front end of the Trend Vision One sec
 
 Trend Micro Staff Engineer，负责 Trend Vision One 安全平台的前端，专注 AI Agent 工程化、微前端和前端架构。
 
+**Live page / 在线简历**: [https://yurizhang.github.io/resume/](https://yurizhang.github.io/resume/)
+
 | | PDF | Markdown |
 | --- | --- | --- |
 | English | [Yong_Zhang_Resume_EN.pdf](Yong_Zhang_Resume_EN.pdf) | [resume-en.md](resume-en.md) |
