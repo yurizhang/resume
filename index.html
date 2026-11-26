@@ -291,6 +291,12 @@ const ICON = {
   download: '<path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/>',
   arrow: '<path d="M5 12h14M13 5l7 7-7 7"/>'
 };
+// Code card "stack": one row per layer (front end / back end / build & data)
+const STACK = [
+  ['Vue 3', 'React', 'TypeScript'],
+  ['Node.js', 'PHP', 'Go'],
+  ['qiankun', 'Vite', 'MySQL'],
+];
 const svg = (n) => `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${ICON[n]}</svg>`;
 const strip = (h) => h.replace(/<[^>]+>/g, '');
 const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -318,7 +324,9 @@ function render(lang) {
     `  focus: [`,
     ...d.typed.map((t, i) => `    <span class="s">'${t}'</span>${i < d.typed.length - 1 ? ',' : ''}`),
     `  ],`,
-    `  stack: [<span class="s">'Vue 3'</span>, <span class="s">'React'</span>, <span class="s">'qiankun'</span>, <span class="s">'Vite'</span>],`,
+    `  stack: [`,
+    ...STACK.map((row, i) => `    ${row.map(t => `<span class="s">'${t}'</span>`).join(', ')}${i < STACK.length - 1 ? ',' : ''}`),
+    `  ],`,
     `  aiNative: <span class="n">true</span>, <span class="c">// ${d.ui.codeComment}</span>`,
     `};`
   ].map((l, i) => `<span class="ln" style="animation-delay:${1.3 + i * .09}s">${l}</span>`).join('');
