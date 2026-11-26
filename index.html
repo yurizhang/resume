@@ -536,20 +536,24 @@ if (matchMedia('(pointer: fine)').matches && !reduceMotion) {
 
 // Language toggle
 const langBox = document.getElementById('lang');
-function setLang(l) {
+function setLang(l, remember) {
   langBox.dataset.lang = l;
   langBox.querySelectorAll('button').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.l === l)));
-  try { localStorage.setItem('yz_lang', l); } catch (_) {}
+  // A manual switch only lasts for this tab; new visits follow the browser language again.
+  if (remember) { try { sessionStorage.setItem('yz_lang', l); } catch (_) {} }
   render(l);
 }
-langBox.addEventListener('click', (e) => { const b = e.target.closest('button'); if (b && b.dataset.l !== langBox.dataset.lang) setLang(b.dataset.l); });
+langBox.addEventListener('click', (e) => { const b = e.target.closest('button'); if (b && b.dataset.l !== langBox.dataset.lang) setLang(b.dataset.l, true); });
 
-let initial = 'zh';
-try { initial = localStorage.getItem('yz_lang') || ''; } catch (_) { initial = ''; }
-if (!DATA[initial]) initial = (navigator.language || '').toLowerCase().startsWith('zh') ? 'zh' : 'en';
-const q = new URLSearchParams(location.search).get('lang');
-if (DATA[q]) initial = q;
-setLang(initial);
+// Default language: ?lang= > this tab's manual choice > browser language (Chinese -> zh, anything else -> en)
+function browserLang() {
+  const first = (navigator.languages && navigator.languages[0]) || navigator.language || '';
+  return first.toLowerCase().startsWith('zh') ? 'zh' : 'en';
+}
+let initial = new URLSearchParams(location.search).get('lang');
+if (!DATA[initial]) { try { initial = sessionStorage.getItem('yz_lang'); } catch (_) { initial = null; } }
+if (!DATA[initial]) initial = browserLang();
+setLang(initial, false);
 </script>
 </body>
 </html>
