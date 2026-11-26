@@ -135,12 +135,12 @@ Vision One 平台的安全仪表盘。2021 年从 0 搭建前端容器框架和�
 | 方向 | 技术 |
 | --- | --- |
 | AI Agent | Claude Code、MCP（Figma 等）、Agent Skills 与 Hooks 编写、上下文工程（CLAUDE.md、长期记忆、项目知识库）、Agent 驱动的 Jira / GitHub / CI 自动化、AI 原型（UI 流程文档、XState 状态图） |
-| 前端 | Vue 3（Options / Composition API）、React、TypeScript、jQuery、Ant Design Vue、ECharts、设计系统组件、i18n |
-| 微前端 | qiankun / single-spa、HTML Entry、样式隔离与 JS 沙箱、子应用独立部署、react-grid-layout |
+| 前端 | Vue 3（Options / Composition API）、React、Next.js、TypeScript、jQuery、Ant Design Vue、ECharts、设计系统组件、i18n |
+| 微前端 | qiankun / single-spa、Module Federation、HTML Entry、样式隔离与 JS 沙箱、子应用独立部署、react-grid-layout |
 | 移动端 | React Native、WEEX、Hybrid App、移动 M 站性能优化 |
 | 工程化 | Vite、webpack、Rollup 分包与缓存策略、Docker、GitHub Actions、确定性构建 |
 | 测试 | Vitest、@vue/test-utils、Mock 服务 |
-| 后端 | Node.js / Express / EggJS、PHP（CodeIgniter、Smarty）、Python Django、RESTful API 设计与文档 |
+| 后端 | Node.js / Express / EggJS、Go、PHP（CodeIgniter、Smarty）、Python Django、RESTful API 设计与文档 |
 | 微信与支付 | 微信公众号开发（网页授权、JS-SDK）、微信小程序、微信支付、支付宝支付 |
 | 数据库 | MySQL、PostgreSQL、MSSQL |
 | 安全 | XSS 等 Web 安全检测与防护、权限（RBAC）设计 |

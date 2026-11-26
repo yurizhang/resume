@@ -135,12 +135,12 @@ Tech stack: PHP, Smarty, MySQL, WeChat Official Account (web OAuth, JS-SDK), WeC
 | Area | Technologies |
 | --- | --- |
 | AI agents | Claude Code, MCP (Figma and others), writing agent skills and hooks, context engineering (CLAUDE.md, long-term memory, project knowledge base), agent-driven Jira / GitHub / CI automation, AI prototyping (UI flow docs, XState statecharts) |
-| Front end | Vue 3 (Options / Composition API), React, TypeScript, jQuery, Ant Design Vue, ECharts, design-system components, i18n |
-| Micro-frontends | qiankun / single-spa, HTML Entry, style isolation and JS sandbox, independently deployed sub-apps, react-grid-layout |
+| Front end | Vue 3 (Options / Composition API), React, Next.js, TypeScript, jQuery, Ant Design Vue, ECharts, design-system components, i18n |
+| Micro-frontends | qiankun / single-spa, Module Federation, HTML Entry, style isolation and JS sandbox, independently deployed sub-apps, react-grid-layout |
 | Mobile | React Native, WEEX, hybrid apps, mobile site performance tuning |
 | Build and CI | Vite, webpack, Rollup code splitting and caching strategy, Docker, GitHub Actions, reproducible builds |
 | Testing | Vitest, @vue/test-utils, mock servers |
-| Back end | Node.js / Express / EggJS, PHP (CodeIgniter, Smarty), Python Django, RESTful API design and docs |
+| Back end | Node.js / Express / EggJS, Go, PHP (CodeIgniter, Smarty), Python Django, RESTful API design and docs |
 | WeChat and payments | WeChat Official Account development (web OAuth, JS-SDK), WeChat Mini Programs, WeChat Pay, Alipay |
 | Databases | MySQL, PostgreSQL, MSSQL |
 | Security | Web security testing and protection (XSS and more), permission (RBAC) design |
