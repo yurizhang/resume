@@ -18,4 +18,4 @@ Trend Micro Staff Engineer，负责 Trend Vision One 安全平台的前端，专
 
 ## Contact
 
-[LinkedIn](https://www.linkedin.com/in/yong-zhang-842332bb/)
+[LinkedIn](https://www.linkedin.com/in/yong-zhang-842332bb/) · [zhangyong0604@126.com](mailto:zhangyong0604@126.com)

@@ -6,6 +6,7 @@
 | --- | --- |
 | 求职意向 | Staff Engineer / 前端架构师 |
 | 工作年限 | 18 年 Web 开发经验，其中 13 年在 Trend Micro 趋势科技 |
+| 邮箱 | zhangyong0604@126.com |
 | 所在地 | 南京 · 玄武区 |
 | 学历 | 本科 · 南京理工大学 · 信息管理与信息系统 |
 | LinkedIn | [linkedin.com/in/yong-zhang-842332bb](https://www.linkedin.com/in/yong-zhang-842332bb/) |

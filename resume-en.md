@@ -6,6 +6,7 @@
 | --- | --- |
 | Target role | Staff Engineer / Frontend Architect |
 | Experience | 18 years in web development, 13 of them at Trend Micro |
+| Email | zhangyong0604@126.com |
 | Location | Xuanwu District, Nanjing, China |
 | Education | B.S., Information Management and Information Systems, Nanjing University of Science and Technology |
 | LinkedIn | [linkedin.com/in/yong-zhang-842332bb](https://www.linkedin.com/in/yong-zhang-842332bb/) |
